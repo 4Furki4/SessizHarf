@@ -6,7 +6,12 @@ namespace SessizHarf
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Konsol_Islemleri konsol = new Konsol_Islemleri();
+            Algoritma algoritma = new Algoritma();
+            konsol.IlkMesaj();
+            konsol.SonuclariEkranaYazdır(algoritma.YanYanaIkiUnsuzKontrolu(konsol.KelimeleriAlma()));
+            
+            
         }
     }
 }
