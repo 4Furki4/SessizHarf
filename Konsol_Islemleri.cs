@@ -13,5 +13,12 @@ namespace SessizHarf
             string kelimeler= Console.ReadLine();
             return kelimeler.Split(" ");
         }
+        public void SonuclariEkranaYazdır(bool[] arr)
+        {
+            foreach (var item in arr)
+            {
+                System.Console.WriteLine(item+" ");
+            }
+        }
     }
 }
